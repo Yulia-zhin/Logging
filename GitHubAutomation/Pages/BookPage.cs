@@ -42,6 +42,7 @@ namespace TestAutomation.Pages
         public string GetError()
         {
             new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(ExpectedConditions.ElementToBeClickable(By.ClassName("_3gOW")));
+            Logger.Log.Info("Get error");
             return ErrorTextClass.Text;
         }
         public string GetNotice()
